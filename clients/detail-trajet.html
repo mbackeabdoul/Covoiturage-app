@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Détail du trajet</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+
+<header class="h-16 bg-white border-b border-gray-200 flex items-center justify-between px-6 md:px-12">
+  <a href="../index.html" class="text-lg font-semibold text-gray-900">Covoiturage</a>
+  <nav class="flex items-center gap-6 text-sm">
+    <a href="../index.html" class="text-gray-900 font-medium">Rechercher un trajet</a>
+    <a href="../conducteur/connexion.html" class="text-gray-500 hover:text-gray-900">Devenir conducteur</a>
+  </nav>
+</header>
+
+<main class="max-w-5xl mx-auto px-6 py-12">
+  <a href="resultats.html" class="text-sm text-gray-500 hover:text-gray-900 mb-6 inline-block"> Retour aux résultats</a>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div class="md:col-span-2 bg-white border border-gray-200 p-7">
+      <div class="text-xl font-semibold text-gray-900 mb-2">Dakar → Thiès</div>
+      <div class="text-sm text-gray-500 mb-6">15 juillet 2026 · Départ 08:00</div>
+      <div class="flex items-center gap-4 py-4 border-t border-gray-200">
+        <div class="w-12 h-12 rounded-full bg-gray-100 border border-gray-200"></div>
+        <div>
+          <div class="text-sm font-medium text-gray-900">Mousstaphaa Diop</div>
+        </div>
+      </div>
+      <div class="py-4 border-t border-gray-200 text-sm text-gray-900">Toyota Yaris · 4 places</div>
+    </div>
+    <div class="bg-white border border-gray-200 p-6 h-fit">
+      <div class="flex justify-between mb-4">
+        <span class="text-sm text-gray-900">Prix par place</span>
+        <span class="text-sm font-semibold text-gray-900">1 500 FCFA</span>
+      </div>
+      <a href="reserver.html" class="block w-full h-11 flex items-center justify-center bg-gray-900 text-white text-sm font-medium">Réserver ce trajet</a>
+    </div>
+  </div>
+</main>
+
+</body>
+</html>

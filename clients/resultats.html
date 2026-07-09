@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Résultats de recherche</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+
+<header class="h-16 bg-white border-b border-gray-200 flex items-center justify-between px-6 md:px-12">
+  <a href="../index.html" class="text-lg font-semibold text-gray-900">Covoiturage</a>
+  <nav class="flex items-center gap-6 text-sm">
+    <a href="../index.html" class="text-gray-900 font-medium">Rechercher un trajet</a>
+    <a href="../conducteur/connexion.html" class="text-gray-500 hover:text-gray-900">Devenir conducteur</a>
+  </nav>
+</header>
+
+<main class="max-w-5xl mx-auto px-6 py-12">
+  <div class="bg-white border border-gray-200 p-4 flex flex-col md:flex-row gap-3 mb-8">
+    <input class="flex-1 h-11 border border-gray-200 px-4 text-sm" value="Dakar" />
+    <input class="flex-1 h-11 border border-gray-200 px-4 text-sm" value="Thiès" />
+    <input class="flex-1 h-11 border border-gray-200 px-4 text-sm" placeholder="Date" />
+    <button class="h-11 px-6 bg-white border border-gray-200 text-sm font-medium text-gray-900">Filtrer</button>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <a href="detail-trajet.html" class="block bg-white border border-gray-200 p-5 hover:border-gray-400">
+      <div class="flex justify-between mb-2">
+        <span class="text-sm text-gray-900">Dakar → Thiès</span>
+        <span class="text-sm font-semibold text-gray-900">1 500 FCFA</span>
+      </div>
+      <div class="text-xs text-gray-500 mb-4">15 juil. 08:00 · 2 places restantes</div>
+      <span class="inline-block px-4 py-2 border border-gray-200 text-sm font-medium text-gray-900">Voir le trajet</span>
+    </a>
+
+    <div class="block bg-white border border-gray-200 p-5 opacity-50">
+      <div class="flex justify-between mb-2">
+        <span class="text-sm text-gray-900">Dakar → Thiès</span>
+        <span class="text-sm font-semibold text-gray-500">1 200 FCFA</span>
+      </div>
+      <div class="text-xs text-gray-500">15 juil. 09:30 · Complet</div>
+    </div>
+  </div>
+</main>
+
+</body>
+</html>
